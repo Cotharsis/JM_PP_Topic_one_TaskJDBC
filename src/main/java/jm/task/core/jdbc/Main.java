@@ -2,6 +2,10 @@ package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserServiceImpl;
+import jm.task.core.jdbc.util.Util;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
 import java.util.List;
 
 public class Main {
@@ -17,7 +21,8 @@ public class Main {
         }
         userService.cleanUsersTable();
         userService.dropUsersTable();
-
+        SessionFactory sessionFactory = Util.getSessionFactory();
+        sessionFactory.close();
     }
 }
 

@@ -760,29 +760,5 @@ SELECT|sys.sys_config:null
       <ObjectGrants>ALL PRIVILEGES!
 </ObjectGrants>
     </user>
-    <table id="236" parent="3" name="users"/>
-    <column id="237" parent="236" name="Id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="238" parent="236" name="name">
-      <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-    </column>
-    <column id="239" parent="236" name="lastname">
-      <Position>3</Position>
-      <DataType>varchar(40)|0s</DataType>
-    </column>
-    <column id="240" parent="236" name="age">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-    </column>
-    <key id="241" parent="236" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>Id</ColNames>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>

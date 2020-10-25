@@ -37,7 +37,7 @@ public class Util {
     private static   SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
-       // if (sessionFactory == null) {
+        if (sessionFactory == null) {
             try {
                 Configuration configuration = new Configuration()
                         .setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver")
@@ -52,7 +52,7 @@ public class Util {
                 sessionFactory = configuration.buildSessionFactory(builder.build());
             } catch (Exception e) {
                 e.printStackTrace();
-            }
+            }}
 //        }else{
 //            System.out.println("you lox");}
 
